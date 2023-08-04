@@ -1,6 +1,6 @@
 index = document.getElementById('index');
 projects = document.getElementById('projects');
-education = document.getElementById('education');
+education = document.getElementById('edu');
 hobbies = document.getElementById('hobbies');
 feedback = document.getElementById('feedback');
 
