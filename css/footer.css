@@ -1,0 +1,71 @@
+/* Footer */
+.footer-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px 20px;
+    transition: gap 0.3s ease;
+    margin: auto;
+}
+
+.social-icons i {
+    scale: 1.6;
+    transition: scale 0.3s ease;
+    cursor: pointer;
+}
+
+.facebook-icon:hover {
+    background: -moz-linear-gradient(#17A9FD, #0165E1);
+    background: -webkit-linear-gradient(#17A9FD, #0165E1);
+    background: linear-gradient(#17A9FD, #0165E1);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.instagram-icon:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    background: -moz-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.github-icon:hover {
+    color: #60bf3d;
+}
+
+.linkedin-icon:hover {
+    color: #0A66C2;
+}
+
+.copyright {
+    color: black;
+    font-size: 0.7rem;
+    margin-bottom: 2px;
+}
+
+@media screen and (min-width: 800px) {
+    .social-icons {
+        gap: 30px;
+    }
+
+    .social-icons i {
+        scale: 1.8;
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+    }
+}
