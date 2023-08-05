@@ -8,7 +8,7 @@
 
 .contact-container h2 {
     color: #2457be;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     margin-bottom: 15px;
 }
 
@@ -79,7 +79,7 @@
     color: #35abde;
 }
 
-@media screen and (min-width:500px){
+@media screen and (min-width:600px){
     .contact-container {
         margin-bottom: 10px;
     }
@@ -87,15 +87,16 @@
     #contact-me {
         gap: 20px;
     }
-
-    .contact-container h2 {
-        margin-bottom: 20px;
-    }
 }
 
 @media screen and (min-width:720px){
     #contact-me {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-container h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
     }
 }

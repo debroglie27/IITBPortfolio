@@ -44,6 +44,10 @@
 .content-container {
     width: 100%;
     text-align: justify;
+    margin-bottom: 25px;
+}
+
+.video-container {
     margin-bottom: 30px;
 }
 
@@ -76,6 +80,10 @@
     }
 
     .content-container {
+        margin-bottom: 30px;
+    }
+
+    .video-container {
         margin-bottom: 40px;
     }
 }
