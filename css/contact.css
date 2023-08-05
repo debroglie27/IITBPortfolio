@@ -12,7 +12,7 @@
     margin-bottom: 15px;
 }
 
-.contact-me {
+#contact-me {
     display: grid;
     padding: 0 8px;
     gap: 10px;
@@ -84,7 +84,7 @@
         margin-bottom: 10px;
     }
 
-    .contact-me {
+    #contact-me {
         gap: 20px;
     }
 
@@ -94,7 +94,7 @@
 }
 
 @media screen and (min-width:720px){
-    .contact-me {
+    #contact-me {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
