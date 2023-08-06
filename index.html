@@ -5,17 +5,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arijeet De | Home</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
-    <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
+    <link rel="stylesheet" href="./style.css" />
 
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/contact.css" />
+    <style>
+      .main-content {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      .top-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .top-container .image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 25px;
+      }
+
+      .top-container .image-container #myimage {
+        width: 100px;
+        border-radius: 50%;
+      }
+
+      .top-container .text-container {
+        width: 60%;
+      }
+
+      .top-container .text-container h2 {
+        color: #2457be;
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+      }
+
+      .top-container .text-container h3 {
+        font-weight: normal;
+        color: #3ecf54;
+        font-size: 1.1rem;
+      }
+
+      .content-container {
+        width: 100%;
+        text-align: justify;
+        margin-bottom: 25px;
+      }
+
+      .video-container {
+        margin-bottom: 30px;
+      }
+
+      @media screen and (min-width: 600px) {
+        .main-content {
+          max-width: 750px;
+        }
+
+        .top-container {
+          margin-bottom: 30px;
+        }
+
+        .top-container .image-container {
+          margin-right: 40px;
+        }
+
+        .top-container .image-container #myimage {
+          width: 140px;
+        }
+
+        .top-container .text-container h2 {
+          font-size: 2.2rem;
+          margin-bottom: 15px;
+        }
+
+        .top-container .text-container h3 {
+          font-size: 1.4rem;
+        }
+
+        .content-container {
+          margin-bottom: 30px;
+        }
+
+        .video-container {
+          margin-bottom: 40px;
+        }
+      }
+
+      .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .contact-container h2 {
+        color: #2457be;
+        font-size: 1.7rem;
+        margin-bottom: 15px;
+      }
+
+      #contact-me {
+        display: grid;
+        padding: 0 8px;
+        gap: 10px;
+      }
+
+      .contact-container .card-container {
+        background-color: white;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        -webkit-box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.25);
+      }
+
+      .card-container h3 {
+        font-size: 1.45rem;
+        color: #18a103;
+        margin-bottom: 10px;
+      }
+
+      .card-container .link-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .card-container .link-container i {
+        background-color: #f9f9f9;
+        color: #616161;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 5px;
+        scale: 1.3;
+      }
+
+      .card-container a {
+        font-size: 1rem;
+        color: #2457be;
+        margin-right: 20px;
+      }
+
+      .card-container a:hover {
+        cursor: pointer;
+        color: #35abde;
+      }
+
+      @media screen and (min-width: 600px) {
+        #contact-me {
+          gap: 20px;
+        }
+      }
+
+      @media screen and (min-width: 600px) {
+        #contact-me {
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .contact-container h2 {
+          font-size: 2rem;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <nav></nav>
+    <nav>
+      <div class="nav-links">
+        <a id="index" href="./index.html">Home</a>
+        <a id="projects" href="./projects.html">Projects</a>
+        <a id="edu" href="./education.html">Education</a>
+        <a id="hobbies" href="./hobbies.html">Hobbies</a>
+        <a id="feedback" href="./feedback.html">Feedback</a>
+      </div>
+    </nav>
 
     <main>
       <div class="main-content">
@@ -54,9 +223,25 @@
           </p>
         </div>
 
-        <div class="video-container" style="width: 100%; display: flex; align-items: center; justify-content: center;">
-          <video id="myvideo" width="100%" poster="./assets/Video/IntroVideoThumbnail.png" controls>
-            <source src="./assets/Video/IntroVideo.mp4" type="video/mp4" />
+        <div
+          class="video-container"
+          style="
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <video
+            id="myvideo"
+            width="100%"
+            poster="./assets/IntroVideoThumbnail.png"
+            controls
+          >
+            <source
+              src="./assets/IntroVideo.mp4"
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -65,89 +250,76 @@
           <h2>Contact Me</h2>
           <div id="contact-me">
             <div class="card-container">
-              <div class="image-container">
-                <img
-                  src="./assets/ContactLogos/WhatsApp_Logo.png"
-                  alt="WhatsApp Logo"
-                />
-              </div>
-              <div class="text-container">
-                <h3>WhatsApp</h3>
-                <div class="link-container">
-                  <a
-                    href="https://wa.me/916290641516"
-                    class="link-whatsapp"
-                    target="_blank"
-                    >6290641516</a
-                  >
-                  <div class="btn-whatsapp">
-                    <i class="fa-regular fa-clone"></i>
-                  </div>
+              <h3>WhatsApp</h3>
+              <div class="link-container">
+                <a
+                  href="https://wa.me/916290641516"
+                  class="link-whatsapp"
+                  target="_blank"
+                  >6290641516</a
+                >
+                <div class="btn-whatsapp">
+                  <i class="fa-regular fa-clone"></i>
                 </div>
               </div>
             </div>
 
             <div class="card-container">
-              <div class="image-container">
-                <img
-                  src="./assets/ContactLogos/Gmail_Logo.png"
-                  alt="Gmail Logo"
-                />
-              </div>
-              <div class="text-container">
-                <h3>Gmail</h3>
-                <div class="link-container">
-                  <a
-                    href="mailto:arijeetde@gmail.com"
-                    class="link-gmail"
-                    target="_blank"
-                    >arijeetde@gmail.com</a
-                  >
-                  <div class="btn-gmail">
-                    <i class="fa-regular fa-clone"></i>
-                  </div>
+              <h3>Gmail</h3>
+              <div class="link-container">
+                <a
+                  href="mailto:arijeetde@gmail.com"
+                  class="link-gmail"
+                  target="_blank"
+                  >arijeetde@gmail.com</a
+                >
+                <div class="btn-gmail">
+                  <i class="fa-regular fa-clone"></i>
                 </div>
               </div>
             </div>
 
             <div class="card-container">
-              <div class="image-container">
-                <img
-                  src="./assets/ContactLogos/Linkedin_Logo.png"
-                  alt="Linkedin Logo"
-                />
-              </div>
-              <div class="text-container">
-                <h3>Linkedin</h3>
-                <a href="https://www.linkedin.com/in/arijeet-de" target="_blank"
-                  >@arijeet-de</a
-                >
-              </div>
+              <h3>Linkedin</h3>
+              <a href="https://www.linkedin.com/in/arijeet-de" target="_blank"
+                >@arijeet-de</a
+              >
             </div>
 
             <div class="card-container">
-              <div class="image-container">
-                <img
-                  src="./assets/ContactLogos/GitHub_Logo.png"
-                  alt="GitHub Logo"
-                />
-              </div>
-              <div class="text-container">
-                <h3>GitHub</h3>
-                <a href="https://github.com/debroglie27" target="_blank"
-                  >@debroglie27</a
-                >
-              </div>
+              <h3>GitHub</h3>
+              <a href="https://github.com/debroglie27" target="_blank"
+                >@debroglie27</a
+              >
             </div>
           </div>
         </div>
       </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="footer-container">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/arijeet.de">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/121debroglie/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://github.com/debroglie27">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/arijeet-de-6597721b3/">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <p class="copyright">© 2023 Arijeet De.</p>
+      </div>
+    </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="./js/load_nav.js"></script>
-    <script src="./js/load_footer.js"></script>
+    <script
+      src="https://kit.fontawesome.com/640afb8d28.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
